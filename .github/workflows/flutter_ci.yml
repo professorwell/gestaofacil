@@ -25,25 +25,7 @@ jobs:
       run: flutter analyze --no-fatal-infos
 
     - name: Run tests
-      run: flutter test --coverage
+      run: flutter test
 
     - name: Build APK
       run: flutter build apk --release
-
-    - name: Upload APK artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: app-release.apk
-        path: build/app/outputs/flutter-apk/app-release.apk
-
-    - name: Build iOS archive
-      if: runner.os == 'macOS'
-      run: |
-        flutter build ios --no-codesign
-
-    - name: Upload iOS archive
-      if: runner.os == 'macOS'
-      uses: actions/upload-artifact@v2
-      with:
-        name: ios-archive
-        path: build/ios/archive
