@@ -1,16 +1,11 @@
-# myapp
+# GestãoFacil
 
-A new Flutter project.
+Assistente de voz para gestão financeira em Flutter  
+- Registro de vendas à vista, fiado e gastos por voz  
+- Dashboard, relatórios em PDF/CSV, calculadora integrada  
+- Desenvolvido por Welington Matheus A. de Souza e grupo 4 – Talento Tech Imbaú-PR  
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como rodar
+```bash
+flutter pub get
+flutter run
