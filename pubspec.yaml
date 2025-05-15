@@ -1,0 +1,39 @@
+name: gestaofacil
+description: Um assistente de voz para gestão financeira, agora com exportação de relatórios em PDF
+publish_to: 'none'
+version: 1.1.0+2        # ← bump de 1.0.0+1 para 1.1.0+2
+
+environment:
+  sdk: '>=3.1.0 <4.1.0' # ← amplia o upper bound, caso queira usar bibliotecas que exijam Dart 4.X
+
+homepage: "https://github.com/professorwell/gestaofacil"  # ← aponte para a pasta certa, se for diferente
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  pdf: ^3.10.1
+  printing: ^5.10.2
+  speech_to_text: ^7.0.0
+  flutter_tts: ^4.2.2
+  sqflite: ^2.3.2
+  path: ^1.8.3
+  path_provider: ^2.0.12
+  fl_chart: ^1.0.0
+  intl: ^0.20.2
+  share_plus: ^11.0.0
+  open_file: ^3.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.3
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
